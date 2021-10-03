@@ -6,7 +6,12 @@ const todoReducer = createSlice({
   reducers: {
     //Adding todos
     addTodos: (state, action) => {
-      state.push(action.payload);
+      const newTodo = {
+        id: Date.now(),
+        title: action.payload.title,
+        completed: false,
+      };
+      state.push(newTodo);
       return state;
     },
     //remove todos
