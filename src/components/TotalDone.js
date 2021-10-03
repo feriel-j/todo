@@ -20,12 +20,6 @@ const TotalDone = () => {
 
   return (
     <div>
-      <div className="buttons">
-        <button onClick={() => setSort("active")}>Active</button>
-        <button onClick={() => setSort("completed")}>Completed</button>
-        <button onClick={() => setSort("all")}>All</button>
-      </div>
-
       <h4 className="mt-3">Total Complete Items: {completedTodos.length}</h4>
     </div>
   );
